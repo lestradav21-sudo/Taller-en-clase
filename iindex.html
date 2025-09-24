@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador Léxico Profesional</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236c63ff'/><text x='50%' y='58%' font-size='44' text-anchor='middle' fill='white' font-family='Poppins' dy='.3em'>LF</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador Léxico con Expresiones Regulares</h1>
+
+        <div class="input-group">
+            <label for="correo">Correo institucional:</label>
+            <input type="text" id="correo" placeholder="">
+            <button onclick="verificarCorreo()">Verificar</button>
+            <span id="resultado-correo" class="resultado"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="hex">Número hexadecimal:</label>
+            <input type="text" id="hex" placeholder="">
+            <button onclick="verificarHex()">Verificar</button>
+            <span id="resultado-hex" class="resultado"></span>
+        </div>
+
+        <div class="input-group">
+            <label for="decimal">Número decimal (0,0 a 5,0):</label>
+            <input type="text" id="decimal" placeholder="">
+            <button onclick="verificarDecimal()">Verificar</button>
+            <span id="resultado-decimal" class="resultado"></span>
+        </div>
+        <footer class="autor">
+            <span class="autor-nombre">Luis Fernando Estrada Vides</span><br>
+            <span class="autor-profesion">Ingeniero de Sistemas</span>
+        </footer>
+    </div>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="validaciones.js"></script>
+</body>
+</html>
